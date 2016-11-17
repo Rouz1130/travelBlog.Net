@@ -1,10 +1,11 @@
-﻿@model IEnumerable<OurTravelBlog.Models.Location>
+﻿@{
+    ViewData["Title"] = "Our Travel Blog";
+    ViewData["Page"] = "Locations";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-<html>
-<head>
-    <title>Our Travel Blog</title>
-</head>
-<body>
+@model IEnumerable<OurTravelBlog.Models.Location>
+
     <h2>Travel Blog</h2>
     <h4>@Html.DisplayNameFor(model => model.city)</h4>
     <UL>
@@ -14,8 +15,8 @@
         }
        
     </UL>
-</body>
-</html>
+<p>@Html.ActionLink("Add new item", "Create")</p>
+
 
 
 
