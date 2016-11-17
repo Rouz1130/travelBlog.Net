@@ -11,7 +11,7 @@ namespace OurTravelBlog.Models
         public virtual DbSet<Location> Locations { get; set;  }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=TraveBlog;integrated security=True");
+            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=travelblog;integrated security=True");
         }
     }
 }

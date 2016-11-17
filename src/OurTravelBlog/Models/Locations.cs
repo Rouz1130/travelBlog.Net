@@ -12,6 +12,6 @@ namespace OurTravelBlog.Models
     {
        [Key]
         public int id { get; set; }
-        public string City { get; set; }
+        public string city { get; set; }
     }
 }

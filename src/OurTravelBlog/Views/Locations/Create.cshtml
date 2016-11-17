@@ -1,0 +1,18 @@
+﻿@model OurTravelBlog.Models.Location
+
+<html>
+<head>
+
+    <title>Add a city</title>
+</head>
+<body>
+    <h2>Add a city</h2>
+    @using (Html.BeginForm())
+    {
+        @Html.LabelFor(model => model.city)
+        @Html.TextBoxFor(model => model.city)
+        <input type="submit" value="New City" />
+    }
+    <p>@Html.ActionLink("Back to list", "Index")</p>
+</body>
+</html>

@@ -33,9 +33,8 @@ namespace OurTravelBlog
         }
 
        
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app)
         {
-            loggerFactory.AddConsole();
 
             app.UseMvc(routes =>
             {
